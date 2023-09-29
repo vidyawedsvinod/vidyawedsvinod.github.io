@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Web Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 100%;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
+        .video {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Your Web Page</h1>
+    </header>
+    <section>
+        <div class="container">
+            <h2>Video Section</h2>
+            <video class="video" controls>
+                <source src="teaser.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <h2>Image Section</h2>
+            <img class="image" src="P1.jpeg" alt="Your Image">
+        </div>
+    </section>
+</body>
+</html>
