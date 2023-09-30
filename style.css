@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'niccone'; /* Choose a unique name for your font */
+    src: url('Niconne/Niconne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'marmelad'; /* Choose a unique name for your font */
+    src: url('Marmelad/Marmelad-Regular.ttf') format('truetype'); /* Specify the path to your .ttf font file */
+}
+
+@font-face {
+    font-family: 'marck script';
+    src: url('Marck_Script/MarckScript-Regular.ttf');
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex-row {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            padding: 10px;
+        }
+
+        .video-row {
+            background-color: transparent; /* Adjust as needed */
+        }
+
+        .poster {
+            position: absolute;
+            color: #782f97;
+            left: 148px;
+            padding-top: 200px;
+        }
+
+        .line3{
+            font-family: niccone,fantasy;
+                padding-top: 720px;
+                padding-left: 80px;
+                font-size: 60px;
+                font-weight: bolder;
+                color: #b051cf;
+        }
+
+        .line2{
+            color: #5a0076;
+                font-size: 70px;
+                font-weight: bold;
+                font-family: marmelad,sans-serif;
+                padding-left: 125px;
+                padding-top: 500px;
+        }
+
+        .line4{
+            font-family: marck script,cursive;
+                padding-top: 930px;
+                margin-left: -80px;
+                font-size: 45px;
+                font-weight: bolder;
+                color: #8079c2;
+        }
+
+        .line5{
+            font-family: marck script,cursive;
+                padding-top: 930px;
+                padding-left: 195px;
+                font-size: 70px;
+                font-weight: bolder;
+                color: #b051cf;
+        }
+
+        video {
+            width: 100%;
+        }
+
+        .button-row {
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        button {
+            margin: 5px;
+            padding: 10px;
+            background-color: #0077FF; /* Adjust as needed */
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 45%; /* To make buttons take up less space on small screens */
+        }
+
+        @media screen and (max-width: 768px) {
+            .flex-row {
+                height: 200px;
+            }
+        }
