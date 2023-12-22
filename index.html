@@ -3,14 +3,17 @@
 <head>
     <title>Vidya weds Vinod</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <div class="container">
-        <div class="flex-row poster-row" style="max-width: 100%; height: auto; position: relative;">
-            <img src="poster1.webp" alt="Poster Image" style="width: 100%; height: auto; z-index: 1; filter: hue-rotate(257deg);">
+        <div class="flex-row poster-row" style="max-width: 100%; height: auto; 
+        position: relative;padding-bottom: 150px;">
+            <img src="poster.webp" alt="Poster Image" style="width: 100%;
+             height: auto; z-index: 1; filter: hue-rotate(257deg);
+             width: 108%;    margin-left: -79px;">
             <div class="flex-row video-row" style="position: absolute; top: 0; left: 0; z-index: 2;">
-                <video autoplay muted controls>
-                    <source src="teaser.mp4" type="video/mp4">
+                <video id="myVideo" src="teaser.mp4" type="video/mp4" controls muted autoplay playsinline>
                 </video>
             </div>
 
@@ -19,7 +22,7 @@
                 font-weight: bold;"></div>
 
                 <div class="poster line2">
-                    Vidya X Vinod                
+                    Vidya & Vinod                
                 </div>
 
                 <div class="poster line3">
@@ -36,7 +39,7 @@
                 </div>
 
                 <div class="flex-row button-row"
-                style="    top: 1100px;
+                style="    top: 1110px;
                 left: 380px;
                 position: absolute;">
                     <button style="    width: 180px;
@@ -48,21 +51,103 @@
     background: #782f97;"
                     onclick="redirectToGoogleCalendar()">save</button>
                                         </div>
+            <div class="flex-row carousel">
+                <img src="1.webp" alt="Photo 1">
+                <img src="2.webp" alt="Photo 2">
+                <img src="3.webp" alt="Photo 3">
+              </div>
+              
+            
         <div class="flex-row poster-row">
+            <div>
+            <span class="weds">
+                <span style="color:#5a0076;" >Vidya</span>
+                <span style="color:#cb2dff" >Weds</span>
+            <span style="color:#5a0076;" >Vinod</span></span>
+            </div>
+            <div >
+                <img style="    width: 23%;
+                height: auto;
+                margin-top: -80px;
+    margin-left: 38%;
+    rotate: 278deg;"src="top.png" alt="Photo 1">
+            </div>
             
         </div>
-        <div class="flex-row poster-row">
+        <div class="flex-row dp-row">
+            <div class="dp-col"> Ms. Vidyashree</div>
+            <img style="width: 45%;" src="B1.webp" alt="Photo 1">
+        </div>
+        <div class="flex-row dp-row">
+            <img style="width: 45%;"
+            src="G1.webp" alt="Photo 1">
+            <div class="dp-col"> Mr. Vinod</div>
+            <img style="position: absolute;
+                padding-top: 46%;
+    position: absolute;
+    width: 64%;
+    padding-left: 36%;
+    filter: invert(1);"
+            src="flow1.webp" alt="Photo 1">
             
         </div>
+
+        <div class="flex-row events">
+            <h1>
+                Events
+            </h1>
+            <div class="hrline">
+                <div class="hrline" style="left: 523px;">
+                </div>
+            </div>
+            <div class="shape">
+            </div>
+            <div class="shape" style="left: 480px;">
+            </div>
+            <div class="shape" style="left: 575px;">
+            </div>
+
+            </div>
+
+        <div class="flex-row poster-row">
+            <div><img src="haldi1.jpg" alt="Photo 1"></div>
+        </div>
+
         <div class="flex-row poster-row">
             
         </div>
         <div class="flex-row button-row">
-            <button 
-            onclick="window.location.href = 'https://www.google.com/maps'">Go to Google Maps</button>
-                </div>
+            </div>
     </div>
 </body>
+<script>
+    function startCarousel() {
+  const carousel = document.querySelector(".carousel");
+  const images = carousel.querySelectorAll("img");
+  let currentIndex = 0;
+
+  function showImage(index) {
+    images.forEach((img, i) => {
+      img.style.display = i === index ? "block" : "none";
+    });
+  }
+
+  function nextImage() {
+    currentIndex = (currentIndex + 1) % images.length;
+    showImage(currentIndex);
+  }
+
+  // Initial call to show the first image
+  showImage(currentIndex);
+
+  // Automatically change image every 3 seconds (3000 milliseconds)
+  setInterval(nextImage, 3000);
+}
+
+// Start the carousel when the page loads
+window.addEventListener("load", startCarousel);
+
+</script>
 <script>
     function redirectToGoogleCalendar() {
         // Define the event details
@@ -108,4 +193,17 @@
     updateCountdown();
 </script>
 
+<script>
+    // Access the video element
+    const video = document.getElementById("myVideo");
+  
+    // Function to seek 10 seconds forward or backward
+    function seekByTen(seconds) {
+      video.currentTime += seconds;
+    }
+  
+    // Add event listeners for forward and backward buttons
+    document.getElementById("forwardBtn").addEventListener("click", () => seekByTen(10));
+    document.getElementById("backwardBtn").addEventListener("click", () => seekByTen(-10));
+  </script>
 </html>

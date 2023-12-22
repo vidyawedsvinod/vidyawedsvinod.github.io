@@ -12,6 +12,26 @@
     font-family: 'marck script';
     src: url('Marck_Script/MarckScript-Regular.ttf');
 }
+
+@font-face {
+    font-family: "Marmelad";
+    src: url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.eot");
+    src: url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.svg#Marmelad")format("svg");
+}
+
+@font-face {
+    font-family: "Reklame Script W00 Medium";
+    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot");
+    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.svg#Reklame Script W00 Medium")format("svg");
+}
         body {
             margin: 0;
             padding: 0;
@@ -24,10 +44,7 @@
         }
 
         .flex-row {
-            display: flex;
-            align-items: center;
             background-color: white;
-            padding: 10px;
         }
 
         .video-row {
@@ -35,19 +52,34 @@
         }
 
         .poster {
-            position: absolute;
             color: #782f97;
             left: 148px;
-            padding-top: 200px;
+            margin-top: -508px;
+            text-align: center;
+        }
+
+        .dp-col
+        {
+            width: 55%;
+            font-family: "Reklame Script W00 Medium";
+            color: #cb2dff;
+            font-size: 60px;
+        }
+        .dp-row
+        {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            text-align: center;
+            padding: 50px 0 150px 0;
         }
 
         .line3{
             font-family: niccone,fantasy;
-                padding-top: 720px;
-                padding-left: 80px;
+                padding-top: 545px;
                 font-size: 60px;
                 font-weight: 500;
-                color: #b051cf;
+                color: #cb2dff;
         }
 
         .line2{
@@ -55,26 +87,25 @@
                 font-size: 70px;
                 font-weight: 500;
                 font-family: marmelad,sans-serif;
-                padding-left: 125px;
-                padding-top: 500px;
+                padding-top: 580px;
         }
 
         .line4{
             font-family: marck script,cursive;
-                padding-top: 930px;
-                margin-left: -80px;
-                font-size: 45px;
-                font-weight: 500;
-                color: #8079c2;
+            padding-top: 540px;
+            margin-left: -580px;
+            font-size: 45px;
+            font-weight: 500;
+            color: #5a0076;
         }
 
         .line5{
             font-family: marck script,cursive;
-                padding-top: 930px;
-                padding-left: 195px;
-                font-size: 70px;
-                font-weight: 500;
-                color: #b051cf;
+            padding-top: 435px;
+            padding-left: 260px;
+            font-size: 70px;
+            font-weight: 500;
+            color: #cb2dff;
         }
 
         video {
@@ -85,6 +116,58 @@
             justify-content: space-between;
             flex-wrap: wrap;
         }
+
+        .carousel {
+            display: flex;
+            overflow: hidden;
+            width: 100%;
+            padding-bottom: 60px;
+          }
+          
+          .carousel img {
+            width: 100%;
+            height: auto;
+            display: none; /* Hide all images initially */
+          }
+          
+          .carousel img:first-child {
+            display: block; /* Display the first image */
+          }
+          
+          .weds{
+            font-family:marck script,cursive;
+            font-weight: bold;
+            font-size: 80px;
+            padding-left: 20%;
+          }
+
+          .events
+          {
+            padding-top: 123px;
+            text-align: center;
+            font-family: Marmelad,cursive;
+            color: #5A0076;
+            font-size: 38px;
+            letter-spacing: 10px;
+          }
+
+          .hrline
+          {
+            border-bottom: 3px solid #433d3dfc;
+            width: 250px;
+            position: absolute;
+            left: 102px;
+          }
+
+          .shape{
+            width: 20px;
+            height: 20px;
+            background-color: #c33ce1c4;
+            transform: rotate(45deg);
+            margin-top: -10px;
+            position: absolute;
+            left: 386px;
+          }
 
         button {
             margin: 5px;
