@@ -1,32 +1,32 @@
 @font-face {
     font-family: 'niccone'; /* Choose a unique name for your font */
-    src: url('Niconne/Niconne-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Niconne/Niconne-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'caveat'; /* Choose a unique name for your font */
-    src: url('Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
+    src: url('assets/fonts/Caveat/Caveat-VariableFont_wght.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'cookie'; /* Choose a unique name for your font */
-    src: url('Cookie/Cookie-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Cookie/Cookie-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'poppins'; /* Choose a unique name for your font */
-    src: url('Poppins/Poppins-Regular.ttf') format('truetype');
+    src: url('assets/fonts/Poppins/Poppins-Regular.ttf') format('truetype');
 }
 
 
 @font-face {
     font-family: 'marmelad'; /* Choose a unique name for your font */
-    src: url('Marmelad/Marmelad-Regular.ttf') format('truetype'); /* Specify the path to your .ttf font file */
+    src: url('assets/fonts/Marmelad/Marmelad-Regular.ttf') format('truetype'); /* Specify the path to your .ttf font file */
 }
 
 @font-face {
     font-family: 'marck script';
-    src: url('Marck_Script/MarckScript-Regular.ttf');
+    src: url('assets/fonts/Marck_Script/MarckScript-Regular.ttf');
 }
 
 @font-face {
@@ -70,7 +70,7 @@
         .poster {
             color: #782f97;
             left: 148px;
-            margin-top: -548px;
+            margin-top: -503px;
             text-align: center;
         }
 
@@ -92,7 +92,7 @@
 
         .line3{
             font-family: niccone,fantasy;
-                padding-top: 570px;
+                padding-top: 535px;
                 font-size: 60px;
                 font-weight: 500;
                 color: #cb2dff;
@@ -100,15 +100,15 @@
 
         .line2{
             color: #5a0076;
-                font-size: 70px;
+                font-size: 80px;
                 font-weight: 600;
                 font-family: marmelad,sans-serif;
-                padding-top: 615px;
+                padding-top: 558px;
         }
 
         .line4{
             font-family: marck script,cursive;
-            padding-top: 600px;
+            padding-top: 560px;
             font-size: 45px;
             font-weight: 500;
             color: #5a0076;
