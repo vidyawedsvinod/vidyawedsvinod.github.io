@@ -28,25 +28,9 @@
     font-family: 'marck script';
     src: url('assets/fonts/Marck_Script/MarckScript-Regular.ttf');
 }
-
 @font-face {
-    font-family: "Marmelad";
-    src: url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.eot");
-    src: url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/f698308120d402f0dc47bb8d355478c3.svg#Marmelad")format("svg");
-}
-
-@font-face {
-    font-family: "Reklame Script W00 Medium";
-    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot");
-    src: url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.svg#Reklame Script W00 Medium")format("svg");
+  font-family: 'merienda';
+  src: url('assets/fonts/Merienda/Merienda-VariableFont_wght.ttf');
 }
       body {
             margin: 0;
@@ -153,10 +137,11 @@
 
         .dp-col
         {
-            width: 55%;
-            font-family: "Reklame Script W00 Medium";
-            color: #c157e5;
-            font-size: 60px;
+          width: 55%;
+          font-family: merienda;
+          color: #c157e5;
+          font-size: 60px;
+          font-weight: 700;
         }
         .dp-row
         {
