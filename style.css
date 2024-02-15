@@ -48,10 +48,87 @@
     url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/c017c9efb81f32559dee68fa54edbde4.svg#Reklame Script W00 Medium")format("svg");
 }
-        body {
+      body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
+        }
+        * {
+          box-sizing: border-box;
+          margin: 0;
+        }
+        
+        h1 {
+          margin: 1rem 0;
+        }
+        
+        h2 {
+          color: white;
+          opacity: 0;
+          font-size: 5rem;
+          animation: fadeIn 1s cubic-bezier(0, 0, 0.59, 0.73) forwards;
+        }
+        
+        .flex-row {
+          font-size: 4rem;
+          opacity: 0;
+          animation: fadeInText 1s ease forwards 3s;
+        }
+        
+        .intro {
+          height: 100vh;
+          /* background-color: black; */
+          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(assets/pre_images/IMG_4269.jpg) no-repeat center/cover;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        
+        main {
+          position: absolute;
+          transform: scale(0, 0);
+          animation: animate 1s ease-in forwards 1s;
+        }
+        
+        .content {
+          width: 100%;
+          text-align: center;
+          overflow-y: auto;
+        }
+        
+        @keyframes animate {
+          0% {
+            transform: scale(0, 0.005);
+          }
+          50% {
+            transform: scaleY(0.005);
+          }
+          100% {
+            transform: scale(1, 1);
+          }
+        }
+        
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+            transform: translateY(50%);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(-50%);
+          }
+        }
+        
+        @keyframes fadeInText {
+          from {
+            opacity: 0;
+            transform: translateY(50%);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0%);
+          }
         }
 
         .container {
@@ -87,7 +164,7 @@
             flex-direction: row;
             align-items: center;
             text-align: center;
-            padding: 50px 0 150px 0;
+            padding: 50px 0 100px 0;
         }
 
         .line3{
@@ -156,7 +233,7 @@
 
           .events
           {
-            padding-top: 123px;
+            margin-top: 123px;
             text-align: center;
             font-family: Marmelad,cursive;
             color: #5A0076;
