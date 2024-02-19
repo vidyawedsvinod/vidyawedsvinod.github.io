@@ -57,7 +57,7 @@
 }
   
       // Set your target date here (Year, Month - 1, Day, Hour, Minute, Second)
-      var targetDate = new Date(2024, 2 - 1, 28, 0, 0, 0); // November 1, 2023
+      var targetDate = new Date(2024, 2 - 1, 29, 0, 0, 0); // November 1, 2023
   
       // Function to update the countdown timer
       function updateCountdown() {
