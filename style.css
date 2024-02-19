@@ -62,7 +62,7 @@
         .intro {
           height: 100vh;
           /* background-color: black; */
-          background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+          background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url(assets/pre_images/IMG_4269.jpg) no-repeat center/cover;
           display: flex;
           justify-content: center;
